@@ -36,7 +36,7 @@ MTB_TYPE=COMBINED
 # configurations. If TARGET is manually edited, ensure TARGET_<BSP>.mtb with a
 # valid URL exists in the application, run 'make getlibs' to fetch BSP contents
 # and update or regenerate launch configurations for your IDE.
-TARGET=APP_KIT_XMC13_BOOT_001
+TARGET=APP_KIT_XMC1300_DC_V1
 
 # Name of application (used to derive name of final linked file).
 #

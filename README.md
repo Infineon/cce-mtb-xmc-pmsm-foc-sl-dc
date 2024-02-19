@@ -44,7 +44,7 @@ Create the project and open it using one of the following:
 
 1. Click the **New Application** link in the **Quick Panel** (or, use **File** > **New** > **ModusToolbox&trade; Application**). This launches the [Project Creator](https://www.infineon.com/ModusToolboxProjectCreator) tool.
 
-2. Select the kit XMC1300 (`KIT_XMC13_BOOT_001`) or XMC1400 (`KIT_XMC14_BOOT_001`)  from the **XMC&trade; BSPs** list shown in the **Project Creator - Choose Board Support Package (BSP)** dialog.
+2. Select the kit XMC1300 drive card (`KIT_XMC1300_DC_V1`) or XMC1400 drive card (`KIT_XMC1400_DC_V1`)  from the **XMC&trade; BSPs** list shown in the **Project Creator - Choose Board Support Package (BSP)** dialog.
 
 3. In the **Project Creator - Select Application** dialog, choose the example from the list **Community Code Examples** by enabling the checkbox.
 
@@ -65,9 +65,9 @@ Create the project and open it using one of the following:
 
 **Figure 2. Opening the workspace folder in Micro Inspector Pro**
 
-10. Find the "PMSM_FOC_SL_XMC1_uCProbe.wspx" file from your ModusToolbox workspace folder and select **Open**. A pop-up window will appear to show the existing elf file. Select the one shown and click **Open**. If there is not any elf file shown in the pop-up window, please click **Browse** and go to your ModusToolbox workspace "..\cce-mtb-xmc-pmsm-foc-sl-dc\build\APP_KIT_XMC13_BOOT_001\Debug" to open the elf file from there. If you are using XMC14, elf file path is ""..\cce-mtb-xmc-pmsm-foc-sl-dc\build\APP_KIT_XMC14_BOOT_001\Debug". 
+10. Find the "PMSM_FOC_SL_XMC1_uCProbe.wspx" file from your ModusToolbox workspace folder and select **Open**. A pop-up window will appear to show the existing elf file. Select the one shown and click **Open**. If there is not any elf file shown in the pop-up window, please click **Browse** and go to your ModusToolbox workspace "..\cce-mtb-xmc-pmsm-foc-sl-dc\build\APP_KIT_XMC1300_DC_V1\Debug" to open the elf file from there. If you are using XMC14, elf file path is ""..\cce-mtb-xmc-pmsm-foc-sl-dc\build\APP_KIT_XMC1400_DC_V1\Debug". 
 
-<img src="images/elf.png" width="500" height="440" style="border: 2px solid gray; border-radius:15px">
+<img src="images/elf.png" width="400" height="352" style="border: 2px solid gray; border-radius:15px">
 
 **Figure 3. Selecting the elf file**
 
@@ -135,10 +135,10 @@ Argument | Description | Required/optional
 
 <br />
 
-The following example clones the "[PMSM FOC SL XMC13/14 DC](https://github.com/Infineon/cce-mtb-xmc-pmsm-foc-sl-dc)" application with the desired name "cce-mtb-xmc-pmsm-foc-sl-dc" configured for the *KIT_XMC13_BOOT_001* BSP into the specified working directory, *C:/mtb_projects*:
+The following example clones the "[PMSM FOC SL XMC13/14 DC](https://github.com/Infineon/cce-mtb-xmc-pmsm-foc-sl-dc)" application with the desired name "cce-mtb-xmc-pmsm-foc-sl-dc" configured for the *KIT_XMC1300_DC_V1* BSP into the specified working directory, *C:/mtb_projects*:
 
    ```
-   project-creator-cli --board-id KIT_XMC13_BOOT_001 --app-id cce-mtb-xmc-pmsm-foc-sl-dc --user-app-name cce-mtb-xmc-pmsm-foc-sl-dc --target-dir "C:/mtb_projects"
+   project-creator-cli --board-id KIT_XMC1300_DC_V1 --app-id cce-mtb-xmc-pmsm-foc-sl-dc --user-app-name cce-mtb-xmc-pmsm-foc-sl-dc --target-dir "C:/mtb_projects"
    ```
    
    **Note:** The cloned application contains a default BSP file (*TARGET_xxx.mtb*) in the *bsps* folder. Use the [Library Manager](https://www.infineon.com/ModusToolboxLibraryManager) (`make modlibs` command) to select or add a different BSP file, if required. If the selected kit does not have the required resources or is not supported, the application may not work.
@@ -188,7 +188,8 @@ Document title: *CCE#002-38929 - PMSM FOC SL XMC13/14 DC*
 
 | Version | Description of change |
 | ------- | --------------------- |
-| 1.0.0   | New community code example      |
+| 1.0.0   | New community code example         |
+| 1.1.0     | Updated CCE for XMC13-14 DC BSPs |
 ------
 
 All other trademarks or registered trademarks referenced herein are the property of their respective owners.
